@@ -1,0 +1,19 @@
+AppBundle\Entity\category:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\categoryRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
+    oneToMany:
+        postsCategory:
+            targetEntity: post
+            mappedBy: category

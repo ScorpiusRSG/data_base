@@ -1,0 +1,142 @@
+<?php
+
+namespace AppBundle\Entity;
+
+/**
+ * Autor
+ */
+class Autor
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $name;
+
+    /**
+     * @var string
+     */
+    private $sName;
+
+    /**
+     * @var string
+     */
+    private $email;
+
+    /**
+     * @var \DateTime
+     */
+    private $lastLogDate;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return Autor
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set sName
+     *
+     * @param string $sName
+     *
+     * @return Autor
+     */
+    public function setSName($sName)
+    {
+        $this->sName = $sName;
+
+        return $this;
+    }
+
+    /**
+     * Get sName
+     *
+     * @return string
+     */
+    public function getSName()
+    {
+        return $this->sName;
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     *
+     * @return Autor
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Set lastLogDate
+     *
+     * @param \DateTime $lastLogDate
+     *
+     * @return Autor
+     */
+    public function setLastLogDate($lastLogDate)
+    {
+        $this->lastLogDate = $lastLogDate;
+
+        return $this;
+    }
+
+    /**
+     * Get lastLogDate
+     *
+     * @return \DateTime
+     */
+    public function getLastLogDate()
+    {
+        return $this->lastLogDate;
+    }
+}
+

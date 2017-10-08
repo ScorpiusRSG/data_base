@@ -1,0 +1,32 @@
+AppBundle\Entity\Autor:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\AutorRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        sName:
+            type: string
+            length: 255
+            column: s_name
+        email:
+            type: string
+            length: 255
+        lastLogDate:
+            type: datetime
+            column: last_log_date
+    lifecycleCallbacks: {  }
+    oneToMany:
+        post:
+            targetEntity: post
+            mappedBy: Autor
+        comment:
+            targetEntity: comment
+            mappedBy: Autor
